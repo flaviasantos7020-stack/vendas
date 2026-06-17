@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#fff7d6"/>
+  <polygon points="200,110 230,195 320,195 248,250 275,335 200,285 125,335 152,250 80,195 170,195"
+    fill="#f9e07f" stroke="#f4c95d" stroke-width="6"/>
+  <circle cx="180" cy="225" r="5" fill="#4a3f41"/>
+  <circle cx="220" cy="225" r="5" fill="#4a3f41"/>
+  <text x="200" y="370" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#4a3f41">Naninha Estrelinha</text>
+</svg>

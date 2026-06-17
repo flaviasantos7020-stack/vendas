@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#fde2e4"/>
+  <circle cx="200" cy="230" r="90" fill="#ffffff"/>
+  <ellipse cx="160" cy="110" rx="22" ry="60" fill="#ffffff"/>
+  <ellipse cx="240" cy="110" rx="22" ry="60" fill="#ffffff"/>
+  <ellipse cx="160" cy="115" rx="10" ry="40" fill="#f4a7b9"/>
+  <ellipse cx="240" cy="115" rx="10" ry="40" fill="#f4a7b9"/>
+  <circle cx="170" cy="220" r="6" fill="#4a3f41"/>
+  <circle cx="230" cy="220" r="6" fill="#4a3f41"/>
+  <ellipse cx="200" cy="245" rx="12" ry="8" fill="#f4a7b9"/>
+  <text x="200" y="350" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#4a3f41">Naninha Coelhinho</text>
+</svg>
