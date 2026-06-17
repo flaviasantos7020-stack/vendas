@@ -10,5 +10,5 @@ export const SITE_CONFIG: SiteConfig = {
   storeName: 'Flavia Santos Bordados',
   tagline: 'Naninhas e fraldas bordadas com carinho para o seu bebê',
   whatsappNumber: '5514997745063',
-  instagramUrl: 'https://instagram.com/ninhodealgodao',
+  instagramUrl: 'https://instagram.com/atelienananene70',
 };

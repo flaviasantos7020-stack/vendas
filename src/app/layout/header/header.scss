@@ -8,10 +8,22 @@
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
 
+  &__brand-group {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
   &__brand {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--color-primary);
+  }
+
+  &__title {
+    font-size: 1rem;
+    color: var(--color-muted);
   }
 
   &__nav {
