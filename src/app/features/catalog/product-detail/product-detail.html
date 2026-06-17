@@ -1,0 +1,22 @@
+@if (loading()) {
+  <p>Carregando produto...</p>
+} @else if (product(); as p) {
+  <article class="product-detail">
+    <img class="product-detail__image" [src]="p.images[0]" [alt]="p.name" />
+
+    <div class="product-detail__info">
+      <h1>{{ p.name }}</h1>
+      <p class="product-detail__price">{{ p.price | currency: 'BRL' }}</p>
+      @if (p.size) {
+        <p class="product-detail__size">Tamanho: {{ p.size }} cm</p>
+      }
+
+      <a class="product-detail__cta" [href]="buyLink()" target="_blank" rel="noopener">
+        Comprar no WhatsApp
+      </a>
+    </div>
+  </article>
+} @else {
+  <p>Produto não encontrado.</p>
+  <a routerLink="/produtos">Voltar para produtos</a>
+}

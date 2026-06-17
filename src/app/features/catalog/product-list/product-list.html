@@ -1,0 +1,31 @@
+<h1>Produtos</h1>
+
+<div class="product-list__filters">
+  <a routerLink="/produtos" [class.is-active]="!category()">Todos</a>
+  <a
+    routerLink="/produtos"
+    [queryParams]="{ categoria: 'naninha' }"
+    [class.is-active]="category() === 'naninha'"
+  >
+    Naninhas
+  </a>
+  <a
+    routerLink="/produtos"
+    [queryParams]="{ categoria: 'fralda-bordada' }"
+    [class.is-active]="category() === 'fralda-bordada'"
+  >
+    Fraldas Bordadas
+  </a>
+</div>
+
+@if (loading()) {
+  <p>Carregando produtos...</p>
+} @else if (products().length === 0) {
+  <p>Nenhum produto encontrado.</p>
+} @else {
+  <div class="product-list__grid">
+    @for (product of products(); track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+}

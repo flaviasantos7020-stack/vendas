@@ -1,0 +1,19 @@
+<header class="header">
+  <a class="header__brand" routerLink="/">{{ storeName }}</a>
+
+  <nav class="header__nav">
+    <a routerLink="/produtos" [queryParams]="{ categoria: 'naninha' }" routerLinkActive="is-active">
+      Naninhas
+    </a>
+    <a
+      routerLink="/produtos"
+      [queryParams]="{ categoria: 'fralda-bordada' }"
+      routerLinkActive="is-active"
+    >
+      Fraldas Bordadas
+    </a>
+    <a class="header__whatsapp" [href]="contactLink" target="_blank" rel="noopener">
+      Fale no WhatsApp
+    </a>
+  </nav>
+</header>

@@ -1,0 +1,31 @@
+<section class="home-hero">
+  <h1>Naninhas e fraldas bordadas feitas à mão</h1>
+  <p>{{ tagline }}</p>
+  <a class="home-hero__cta" [href]="contactLink" target="_blank" rel="noopener">
+    Fazer pedido pelo WhatsApp
+  </a>
+</section>
+
+<section class="home-section">
+  <div class="home-section__header">
+    <h2>Naninhas</h2>
+    <a routerLink="/produtos" [queryParams]="{ categoria: 'naninha' }">Ver todas</a>
+  </div>
+  <div class="home-section__grid">
+    @for (product of naninhas; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="home-section__header">
+    <h2>Fraldas Bordadas</h2>
+    <a routerLink="/produtos" [queryParams]="{ categoria: 'fralda-bordada' }">Ver todas</a>
+  </div>
+  <div class="home-section__grid">
+    @for (product of fraldas; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+</section>

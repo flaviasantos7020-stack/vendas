@@ -1,0 +1,13 @@
+<article class="product-card">
+  <a [routerLink]="['/produtos', product().slug]">
+    <img class="product-card__image" [src]="product().images[0]" [alt]="product().name" />
+    <h3 class="product-card__name">{{ product().name }}</h3>
+  </a>
+  <p class="product-card__price">{{ product().price | currency: 'BRL' }}</p>
+  @if (product().size) {
+    <p class="product-card__size">{{ product().size }} cm</p>
+  }
+  <a class="product-card__cta" [href]="buyLink()" target="_blank" rel="noopener">
+    Comprar no WhatsApp
+  </a>
+</article>

@@ -1,0 +1,23 @@
+.product-list__filters {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 600;
+
+  a {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    color: var(--color-muted);
+
+    &.is-active {
+      color: #fff;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.product-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
