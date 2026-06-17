@@ -7,8 +7,8 @@ export interface SiteConfig {
 }
 
 export const SITE_CONFIG: SiteConfig = {
-  storeName: 'Ninho de Algodão',
-  tagline: 'Naninhas e fraldas bordadas feitas à mão, com carinho para o seu bebê',
+  storeName: 'Flavia Santos Bordados',
+  tagline: 'Naninhas e fraldas bordadas com carinho para o seu bebê',
   whatsappNumber: '5511999999999',
   instagramUrl: 'https://instagram.com/ninhodealgodao',
 };

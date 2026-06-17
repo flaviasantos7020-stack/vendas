@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { ProductService } from '../../core/services/product';
@@ -17,8 +17,9 @@ export class Home {
   private readonly whatsapp = inject(WhatsappService);
 
   protected readonly tagline = SITE_CONFIG.tagline;
-  protected readonly naninhas = this.productService.list('naninha').slice(0, 3);
-  protected readonly fraldas = this.productService.list('fralda-bordada').slice(0, 3);
+  protected readonly loading = this.productService.loading;
+  protected readonly naninhas = computed(() => this.productService.list('naninha').slice(0, 3));
+  protected readonly fraldas = computed(() => this.productService.list('fralda-bordada').slice(0, 3));
   protected readonly contactLink = this.whatsapp.buildContactLink(
     'Olá! Vim do site e queria saber mais sobre as naninhas e fraldas bordadas.',
   );
